@@ -1,0 +1,13 @@
+Weekend RTL design practice. :-) 
+Design a logic that outputs unique second largest number seen in input stream.
+// input
+valid: 1 0 1 1 1 1 1 1
+data: 10 5 4 7 9 11 11 12
+// output
+O/P: - - - 4 7 9 10 10 11
+valid: 0 0 0 1 1 1 1 1 1 
+
+input interface take valid and data, similarly output interface outputs data along with valid.
+Requirement Clarification:
+- we want second largest in all unique inputs seen so far
+- anytime input data is valid, the design should accept it.
