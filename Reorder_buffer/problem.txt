@@ -1,0 +1,12 @@
+RTL Design Practice: Reorder Buffer [ROB] used in out-of-order CPUs.
+Ending the weekend on a high! This is a great practice design problem.
+Design a ROB with a valid/ready input interface along with the data and associated ID.
+The output interface is also valid and ready, with the data being output in order. 
+
+Ex: If we take ID from 0:7, then ID can come in any random order, but the output data associated with it will go out in strict order from 0 to 7.
+
+Assumed Valid/ready interface naming
+ // Upstream interface naming
+[valid_in, data_in, idx, ready_out]
+ // downstream interface naming
+[valid_out, data_out, ready_in]
